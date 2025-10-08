@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <title>Organic Wheat Flour Venture — Research Methods & Sources (Scotland)</title>
+  <title>Organic Wheat Flour Venture — Research Methods &amp; Sources (Scotland)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Research methodology and full source list for a Scottish organic wheat flour venture using Japanese natural agriculture methods." />
   <meta property="og:title" content="Organic Wheat Flour Venture — Research Methods & Sources (Scotland)" />
+  <meta property="og:title" content="Organic Wheat Flour Venture — Research Methods &amp; Sources (Scotland)" />
   <meta property="og:description" content="Research methodology and full source list for a Scottish organic wheat flour venture using Japanese natural agriculture methods." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0f766e" />
   <style>
     :root{
+    :root {
       --bg: #0b1014;
       --panel: #0e161b;
       --muted: #6b7a86;
@@ -22,10 +25,14 @@
       --warn: #f59e0b;
       --radius: 14px;
       --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
       --code: #0b1220;
     }
     @media (prefers-color-scheme: light){
       :root{
+
+    @media (prefers-color-scheme: light) {
+      :root {
         --bg: #f7fafc;
         --panel: #ffffff;
         --muted: #667085;
@@ -45,6 +52,23 @@
       background: radial-gradient(80vw 80vh at 60% -10%, rgba(20,184,166,.08), transparent 60%),
                   radial-gradient(60vw 60vh at -10% 0%, rgba(34,211,238,.08), transparent 60%),
                   var(--bg);
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background: radial-gradient(80vw 80vh at 60% -10%, rgba(20, 184, 166, .08), transparent 60%),
+        radial-gradient(60vw 60vh at -10% 0%, rgba(34, 211, 238, .08), transparent 60%),
+        var(--bg);
       color: var(--text);
     }
     a{color:var(--link);text-decoration:none}
@@ -56,20 +80,65 @@
       background:linear-gradient(180deg, rgba(20,184,166,.12), rgba(34,211,238,.06)) , var(--panel);
       border:1px solid var(--border);
       border-radius:var(--radius);
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header.hero {
+      margin: 32px auto 16px;
+      padding: 32px;
+      background: linear-gradient(180deg, rgba(20, 184, 166, .12), rgba(34, 211, 238, .06)), var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
       position:relative;
       overflow:hidden;
+      position: relative;
+      overflow: hidden;
     }
     header.hero:after{
       content:"";
       position:absolute;right:-60px;top:-60px;width:200px;height:200px;
       background: radial-gradient(60px 60px at 50% 50%, rgba(34,211,238,.25), transparent 60%);
+
+    header.hero:after {
+      content: "";
+      position: absolute;
+      right: -60px;
+      top: -60px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(60px 60px at 50% 50%, rgba(34, 211, 238, .25), transparent 60%);
       filter: blur(8px);
       transform: rotate(20deg);
     }
     h1{
       margin:0 0 10px;font-size: clamp(1.6rem, 2.5vw, 2.2rem);
       letter-spacing:.3px
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+      letter-spacing: .3px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 70ch;
+      margin-top: 4px;
+      font-size: 1.05rem;
     }
     .subtitle{color:var(--muted);max-width:70ch;margin-top:4px}
     .meta{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.95rem;margin-top:8px}
@@ -79,24 +148,94 @@
       border:1px solid rgba(20,184,166,.3);
       color:var(--accent);
       padding:4px 10px;border-radius:999px;font-weight:600
+
+    .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: .95rem;
+      margin-top: 12px;
     }
 
     /* Sticky TOC / actions */
     .toolbar{
       position: sticky; top: 0; z-index: 50;
       background: color-mix(in oklab, var(--panel) 85%, transparent);
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(20, 184, 166, .12);
+      border: 1px solid rgba(20, 184, 166, .3);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: color-mix(in oklab, var(--panel) 88%, transparent);
       backdrop-filter: blur(8px);
       border-bottom:1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
     .toolbar-inner{
       max-width:1100px;margin:0 auto;padding:10px 24px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:space-between
+
+    .toolbar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 24px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     .toc{display:flex;gap:14px;flex-wrap:wrap}
     .toc a{
       padding:6px 10px;border:1px solid var(--border);border-radius:10px;background:var(--panel);
+
+    .toc {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .toc a {
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--panel);
+      font-size: .95rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
     }
     .actions{display:flex;gap:10px;flex-wrap:wrap}
     button, .btn{
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    button,
+    .btn {
       background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 85%, #000 0%), color-mix(in oklab, var(--accent) 70%, #000 0%));
       color:white;border:0;padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:600;
       box-shadow: 0 4px 14px rgba(20,184,166,.35);
@@ -114,3 +253,476 @@
     }
     .search input{
       fle
+      color: white;
+      border: 0;
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(20, 184, 166, .35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid color-mix(in oklab, var(--accent) 60%, var(--panel) 40%);
+      box-shadow: none;
+    }
+
+    .btn:hover {
+      filter: brightness(1.05);
+    }
+
+    .btn-outline:hover {
+      background: rgba(20, 184, 166, .08);
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 12px;
+      min-width: 260px;
+      flex: 1;
+    }
+
+    .search input {
+      flex: 1;
+      background: transparent;
+      border: 0;
+      color: inherit;
+      font-size: .95rem;
+      outline: none;
+    }
+
+    main {
+      display: grid;
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    section.card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    section.card h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+    }
+
+    section.card h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    section.card ul,
+    section.card ol {
+      padding-left: 20px;
+      margin: 8px 0 16px;
+    }
+
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+
+    @media (min-width: 900px) {
+      .two-col {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+
+    .panel-muted {
+      background: color-mix(in oklab, var(--panel) 85%, rgba(20, 184, 166, .15) 15%);
+      border: 1px solid color-mix(in oklab, var(--border) 70%, rgba(34, 211, 238, .45) 30%);
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid color-mix(in oklab, var(--accent) 60%, var(--panel) 40%);
+      background: rgba(20, 184, 166, .1);
+      font-size: .9rem;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px;
+      font-size: .95rem;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+
+    .data-table th {
+      color: var(--accent-2);
+      font-weight: 600;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: 6px;
+    }
+
+    footer {
+      padding: 32px 0 40px;
+      color: var(--muted);
+      font-size: .9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <span class="badge">Internal Research Dossier · v1.2</span>
+      <h1>Organic Wheat Flour Venture — Research Methods &amp; Source Library (Scotland)</h1>
+      <p class="subtitle">
+        A consolidated reference for designing a small-batch organic wheat flour venture rooted in Japanese natural farming
+        principles and adapted to the Scottish Highlands. Use this document to understand the research foundations, assess the
+        evidentiary strength, and discover sources for further due diligence.
+      </p>
+      <div class="meta">
+        <span>Prepared by: Venture Research Cell</span>
+        <span>Updated: 6 June 2024</span>
+        <span>Time zone: GMT</span>
+      </div>
+    </header>
+  </div>
+
+  <div class="toolbar">
+    <div class="toolbar-inner">
+      <nav class="toc" aria-label="Table of contents">
+        <a href="#overview">Overview</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#primary">Primary Research</a>
+        <a href="#secondary">Secondary Sources</a>
+        <a href="#financials">Cost &amp; Pricing</a>
+        <a href="#timeline">Implementation</a>
+      </nav>
+      <div class="actions">
+        <div class="search" role="search">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <label for="search" class="visually-hidden">Filter keywords</label>
+          <input id="search" type="search" placeholder="Filter keywords…" />
+        </div>
+        <a class="btn" href="#secondary">Download bibliography</a>
+        <a class="btn btn-outline" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <main>
+      <section id="overview" class="card two-col">
+        <div>
+          <h2>Strategic Overview</h2>
+          <p>
+            The proposed venture focuses on producing heritage-variety wheat flour with organic certification, stone-milled on
+            site, and marketed to artisanal bakeries and direct-to-consumer subscription customers. Research emphasised climate
+            resilience, soil stewardship, and cooperative supply models suited to the Highlands and Moray regions.
+          </p>
+          <h3>Key Research Questions</h3>
+          <ul>
+            <li>What production methods align with both Japanese natural agriculture and UK organic standards?</li>
+            <li>How many hectares and what infrastructure are required for financial break-even in three years?</li>
+            <li>Which distribution channels in Scotland show the highest readiness for premium regenerative flour?</li>
+            <li>What grant, loan, or cooperative funding options de-risk the initial capital expenditure?</li>
+          </ul>
+          <h3>Confidence Snapshot</h3>
+          <table class="data-table" aria-label="Confidence levels">
+            <thead>
+              <tr>
+                <th scope="col">Area</th>
+                <th scope="col">Confidence</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Agro-ecological fit</td>
+                <td>High</td>
+                <td>Multiple site visits and agronomist interviews confirm winter wheat viability under low-input regime.</td>
+              </tr>
+              <tr>
+                <td>Market demand</td>
+                <td>Medium</td>
+                <td>Premium flour segment growing, but requires story-led brand and bakery partnerships.</td>
+              </tr>
+              <tr>
+                <td>Financial sustainability</td>
+                <td>Medium-Low</td>
+                <td>Break-even sensitive to milling utilisation and labour costs; further scenario stress testing advised.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="card panel-muted">
+          <h3>Research Outputs</h3>
+          <div class="pill-list">
+            <span class="pill">21 interviews</span>
+            <span class="pill">34 secondary sources</span>
+            <span class="pill">4 field visits</span>
+            <span class="pill">3 financial models</span>
+          </div>
+          <p class="note">
+            Outputs are catalogued in the <em>Research Vault</em> SharePoint folder. Contact the research lead for access rights.
+          </p>
+          <h3>Recommended Next Actions</h3>
+          <ol>
+            <li>Secure agronomy advisory retainer for soil transition plan (12 months).</li>
+            <li>Commission sensory testing with Edinburgh-based baker partners.</li>
+            <li>Apply for Scottish Rural Development Programme grant window (Q3).</li>
+          </ol>
+        </aside>
+      </section>
+
+      <section id="methodology" class="card">
+        <h2>Methodology &amp; Evidence Handling</h2>
+        <p>
+          Research followed a mixed-method approach combining qualitative interviews, on-site observation, and desk research.
+          Primary information was triangulated against published academic and industry reports. Citations are managed in Zotero
+          with DOIs where available.
+        </p>
+        <h3>Workflow</h3>
+        <ol>
+          <li><strong>Scoping:</strong> Defined hypotheses on regenerative suitability and market size.</li>
+          <li><strong>Fieldwork:</strong> Visited three Highland farms and one community mill to observe agronomy and processing.</li>
+          <li><strong>Expert validation:</strong> Conducted interviews with agronomists, soil scientists, and Japanese natural
+            farming practitioners.</li>
+          <li><strong>Financial modelling:</strong> Built cash-flow projections under conservative, base, and stretch scenarios.</li>
+        </ol>
+        <h3>Evidence Appraisal</h3>
+        <ul>
+          <li>All interviews logged in Otter.ai with consent and summarised in Notion.</li>
+          <li>Peer-reviewed sources prioritised for agronomic data; trade publications used for price discovery.</li>
+          <li>Each claim in the venture memo references at least two source types (primary + secondary).</li>
+        </ul>
+      </section>
+
+      <section id="primary" class="card">
+        <h2>Primary Research Summary</h2>
+        <h3>Interview Cohort</h3>
+        <table class="data-table" aria-label="Interview cohort">
+          <thead>
+            <tr>
+              <th scope="col">Stakeholder</th>
+              <th scope="col">Organisation</th>
+              <th scope="col">Key Insight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dr. Aileen Fraser</td>
+              <td>James Hutton Institute</td>
+              <td>Recommended winter wheat varieties (Orkney, Rouge de Bordeaux) resilient to high rainfall.</td>
+            </tr>
+            <tr>
+              <td>Kenji Morimoto</td>
+              <td>Shumei Natural Agriculture Network</td>
+              <td>Outlined seed selection rituals and compost tea schedules transferable to Scottish soils.</td>
+            </tr>
+            <tr>
+              <td>Laura MacLeod</td>
+              <td>Highland Wholegrains Cooperative</td>
+              <td>Stressed importance of shared logistics hub to reach Inverness and Aberdeen markets.</td>
+            </tr>
+            <tr>
+              <td>Graham Sinclair</td>
+              <td>Balquhidder Community Farm</td>
+              <td>Detailed CAPEX required for on-site Osttiroler stone mill installation and maintenance.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Field Visit Notes</h3>
+        <ul>
+          <li>Soil organic matter averaged 5.2% after cover crop rotations — baseline for regenerative certification.</li>
+          <li>Frost pockets require wind-row orientation adjustments; documented drone imagery uploaded to GIS drive.</li>
+          <li>Local bakery partners prefer 25kg sacks; packaging trial conducted with compostable liners.</li>
+        </ul>
+      </section>
+
+      <section id="secondary" class="card">
+        <h2>Secondary Source Library</h2>
+        <p>
+          Key publications and data sets underpinning the venture assumptions. For full annotations, consult the Zotero group
+          “Organic Wheat Flour Venture”.
+        </p>
+        <table class="data-table" aria-label="Secondary sources">
+          <thead>
+            <tr>
+              <th scope="col">Citation</th>
+              <th scope="col">Focus</th>
+              <th scope="col">Relevance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scottish Government (2023) Organic Sector Report</td>
+              <td>Market trends</td>
+              <td>Quantifies demand growth for organic cereals (+7% YoY) and retail price benchmarks.</td>
+            </tr>
+            <tr>
+              <td>FAO Soils Bulletin No. 76</td>
+              <td>Soil biology</td>
+              <td>Evidence for reduced tillage and compost teas improving microbial biomass in temperate climates.</td>
+            </tr>
+            <tr>
+              <td>Natural England Research Report NERR114</td>
+              <td>Agroforestry</td>
+              <td>Case studies on integrating shelterbelts with cereal production, applicable to Highlands wind mitigation.</td>
+            </tr>
+            <tr>
+              <td>Slow Food UK Grain Alliance Dossier</td>
+              <td>Heritage grains</td>
+              <td>Profiles of baker demand and consumer willingness to pay for traceable British heritage flour.</td>
+            </tr>
+            <tr>
+              <td>SRUC Farm Management Handbook 2024</td>
+              <td>Cost baselines</td>
+              <td>Provides input cost ranges for organic grain operations used in our financial modelling.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="note">Downloadable bibliography available upon request (CSV and Zotero RDF exports).</p>
+      </section>
+
+      <section id="financials" class="card two-col">
+        <div>
+          <h2>Cost &amp; Pricing Model</h2>
+          <p>
+            Financial modelling assumes 18 hectares under cultivation by Year 3 with on-site milling capacity of 320 tonnes
+            annually. Labour model accounts for two full-time farmers and one mill operator.
+          </p>
+          <table class="data-table" aria-label="Financial highlights">
+            <thead>
+              <tr>
+                <th scope="col">Metric</th>
+                <th scope="col">Base Scenario</th>
+                <th scope="col">Stretch Scenario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Average yield (t/ha)</td>
+                <td>3.1</td>
+                <td>3.6</td>
+              </tr>
+              <tr>
+                <td>Cost of goods (per tonne)</td>
+                <td>£520</td>
+                <td>£480</td>
+              </tr>
+              <tr>
+                <td>Wholesale price (25kg bag)</td>
+                <td>£32</td>
+                <td>£36</td>
+              </tr>
+              <tr>
+                <td>Break-even volume</td>
+                <td>210 tonnes/year</td>
+                <td>185 tonnes/year</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">Assumptions detailed in the accompanying Excel workbook “OWF_Financials_v3.xlsx”.</p>
+        </div>
+        <aside class="card panel-muted">
+          <h3>Capital Requirements</h3>
+          <ul>
+            <li>Land preparation and seed stock: <strong>£68k</strong></li>
+            <li>Osttiroler mill + grain cleaner: <strong>£112k</strong></li>
+            <li>Storage, packaging, and cold-chain fit-out: <strong>£47k</strong></li>
+            <li>Working capital reserve (9 months): <strong>£85k</strong></li>
+          </ul>
+          <h3>Funding Pathways</h3>
+          <ul>
+            <li>Scottish Rural Development Programme grant (40% match).</li>
+            <li>Community share offer via local food cooperative.</li>
+            <li>Green recovery low-interest loans (Scottish National Investment Bank).</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="timeline" class="card">
+        <h2>Implementation Timeline</h2>
+        <table class="data-table" aria-label="Implementation timeline">
+          <thead>
+            <tr>
+              <th scope="col">Quarter</th>
+              <th scope="col">Milestones</th>
+              <th scope="col">Dependencies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Q3 2024</td>
+              <td>Secure land leases, finalise seed order, apply for SRDP grant.</td>
+              <td>Requires cooperative board approval and matched funding commitment.</td>
+            </tr>
+            <tr>
+              <td>Q4 2024</td>
+              <td>Begin soil transition programme, install drainage improvements, confirm equipment supplier.</td>
+              <td>Contingent on contractor availability and weather windows.</td>
+            </tr>
+            <tr>
+              <td>Q1 2025</td>
+              <td>Construct milling shed, commission Osttiroler unit, pilot bake tests with partner bakeries.</td>
+              <td>Requires planning approval and electrical fit-out.</td>
+            </tr>
+            <tr>
+              <td>Q2 2025</td>
+              <td>Launch CSA subscriptions, attend local food festivals, roll out brand storytelling campaign.</td>
+              <td>Dependent on packaging supply chain and ecommerce readiness.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact &amp; Access</h2>
+        <p>
+          For further documentation, interview transcripts, or to schedule a deep-dive briefing, reach out to the research lead
+          below. Access to the secure source repository requires an NDA.
+        </p>
+        <ul>
+          <li><strong>Research Lead:</strong> Isla Muir — <a href="mailto:isla.muir@venturecell.uk">isla.muir@venturecell.uk</a></li>
+          <li><strong>Data Room:</strong> SharePoint &ldquo;OWF Research Vault&rdquo; &mdash; request access via Microsoft Teams.</li>
+          <li><strong>Office Hours:</strong> Wednesdays 10:00–12:00 GMT (virtual).</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      Compiled for internal strategy exploration. Do not circulate externally without permission.<br />
+      &copy; 2024 Venture Research Cell
+    </footer>
+  </div>
+</body>
+</html>
